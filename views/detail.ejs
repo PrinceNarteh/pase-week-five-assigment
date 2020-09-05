@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid Anchor</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="details">
+      <div class="card">
+        <div class="card__header">
+          <h1><%= singleCase.Combined_Key %></h1>
+        </div>
+        <div class="card__content">
+          <h2>Statistics</h2>
+          <p><b>FIPS:</b> <span><%= singleCase.FIPS %></span></p>
+          <p><b>Admin 2:</b> <span><%= singleCase.Admin2 %></span></p>
+          <p>
+            <b>Province State:</b> <span><%= singleCase.Province_State %></span>
+          </p>
+          <p><b>Last Update:</b> <span><%= singleCase.Last_Update %></span></p>
+          <p><b>Latitute:</b> <span><%= singleCase.Lat %></span></p>
+          <p><b>Longitute:</b> <span><%= singleCase.Long_ %></span></p>
+          <p><b>Confirmed:</b> <span><%= singleCase.Confirmed %></span></p>
+          <p><b>Deaths:</b> <span><%= singleCase.Deaths %></span></p>
+          <p><b>Recovered:</b> <span><%= singleCase.Recovered %></span></p>
+          <p><b>Active:</b> <span><%= singleCase.Active %></span></p>
+          <p>
+            <b>Combined Key:</b> <span><%= singleCase.Combined_Key %></span>
+          </p>
+          <p>
+            <b>Incidence Rate:</b> <span><%= singleCase.Incidence_Rate %></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

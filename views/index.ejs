@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid Anchor</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <% cases.forEach(caseItem => { %>
+      <div class="box">
+        <div class="box__header">
+          <h3><%= caseItem.Combined_Key %></h3>
+        </div>
+        <div class="box__content">
+          <table>
+            <tbody>
+              <tr>
+                <th>Confirmed:</th>
+                <td><span><%= caseItem.Confirmed %></span></td>
+              </tr>
+              <tr>
+                <th>Deaths:</th>
+                <td><span><%= caseItem.Deaths %></span></td>
+              </tr>
+              <tr>
+                <th>Recovered:</th>
+                <td><span><%= caseItem.Recovered %></span></td>
+              </tr>
+              <tr>
+                <th>Active:</th>
+                <td><span><%= caseItem.Active %></span></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="box__btn">
+            <a href="/country/<%= caseItem._id %>" class="btn">Details</a>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </body>
+</html>
